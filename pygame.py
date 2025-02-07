@@ -4,6 +4,8 @@ import random
 print("Hej, detta är ett spel där du ska gissa djuret.")
 print("REGLER: får du fel så dras det av en chans av de tio chanserna du har,")
 print("om du gissar rätt bokstav får du en notis som meddelar dig om det.")
+print("UPPDATERINGAR: Spelet uppdateras snart, en annan kategori också kanske")
+print("kommer ut. Så var aktiva för att inte missa något.")
 print("Lycka till!")
 
 h = ("h")
