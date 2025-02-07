@@ -55,7 +55,7 @@ while True:
         chanser -= 1  # Fix: -= instead of =-
 
 
-    if poäng == 4:
+    if poäng == 6:
         print("You have guessed the word! It was mystic.")
         
         time.sleep(5)
