@@ -1,57 +1,69 @@
 import time
 import random
 
-print("Hej, detta är ett spel där du ska gissa djuret.")
-print("REGLER: får du fel så dras det av en chans av de tio chanserna du har,")
-print("om du gissar rätt bokstav får du en notis som meddelar dig om det.")
-print("UPPDATERINGAR: Spelet uppdateras snart, en annan kategori också kanske")
-print("kommer ut. Så var aktiva för att inte missa något.")
-print("Lycka till!")
+print("Welcome to Word Sprint.")
+print("RULES: You have ten lifes, a life gets taken away as soon as you guess the letter wrong.")
+print("If you guess the letter right you'll get a notification that tells you.")
+print("Good luck!")
 
-h = ("h")
+m = ("m")
 
-u = ("u")
+y = ("y")
 
-n = ("n")
+s = ("s")
 
-d = ("d")
+t = ("t")
+
+i = ("i")
+
+c = ("c")
+
+
 
 
 chanser = 10
 poäng = 0
 
 while True:
-    fråga = str(input("Vilken bokstav gissar du på?"))
-    if fråga == h:
-        print("du har gissat rätt bokstav!")
-        print("rätt bokstav: H")
+    fråga = str(input("Guess a letter:"))
+    if fråga == m:
+        print("You guessed the letter right!")
+        print("The letter is: M")
         poäng += 1
-    if fråga == u:
-        print("du har gissat rätt bokstav!")
-        print("rätt bokstav: U")
+    if fråga == y:
+        print("You guessed the letter right!")
+        print("The letter is: Y")
         poäng += 1
-    if fråga == n:
-        print("du har gissat rätt bokstav!")
-        print("rätt bokstav: N")
+    if fråga == s:
+        print("You guessed the letter right!")
+        print("The letter is: S")
         poäng += 1
-    if fråga == d:
-        print("du har gissat rätt bokstav!")
-        print("rätt bokstav: D")
+    if fråga == t:
+        print("You guessed the letter right!")
+        print("The letter is: T")
         poäng += 1
-    if fråga not in ("h", "u", "n", "d"):
-        print("Du har gissat fel! Försök igen")
+    if fråga == i:
+        print("You guessed the letter right!")
+        print("The letter is: I")
+        poäng += 1
+    if fråga == c:
+        print("You guessed the letter right!")
+        print("The letter is: C")
+        poäng += 1
+    if fråga not in ("m", "y", "s", "t", "i", "c" ):
+        print("You have guessed the letter wrong, try again.")
         chanser -= 1  # Fix: -= instead of =-
 
 
     if poäng == 4:
-        print("Du har gissat alla bokstäver rätt! djuret var hund")
+        print("You have guessed the word! It was mystic.")
         
         time.sleep(5)
         break    
     
     
     if chanser == 0:
-        print("Du har inga chanser kvar..")
+        print("You have no chances left..")
         
         time.sleep(5)
         break
